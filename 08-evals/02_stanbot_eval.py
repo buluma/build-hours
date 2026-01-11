@@ -167,14 +167,14 @@ output_schema_with_cot = {
 
 providers = [
     {
-        "id": "openai:gpt-4o-2024-08-06",
+        "id": "openai:gpt-4o",
         "config": output_schema_with_cot,
     },
 ]
 
 promptfoo_config = {
     "providers": providers,
-    # "defaultTest": {"options": {"provider": "openai:o1-preview"}},
+    # "defaultTest": {"options": {"provider": "openai:o1"}},
     "prompts": prompts,
     "tests": tests,
 }

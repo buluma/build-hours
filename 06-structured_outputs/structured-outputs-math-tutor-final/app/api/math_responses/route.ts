@@ -3,7 +3,7 @@ import { z } from 'zod'
 import { zodResponseFormat } from 'openai/helpers/zod'
 
 const openai = new OpenAI()
-const MODEL = 'gpt-4o-2024-08-06'
+const MODEL = 'gpt-4o'
 const MATH_TUTOR_PROMPT = `
 You are a helpful math tutor. You will be provided with a math problem,
 and your goal will be to output a step by step solution, along with a final answer.

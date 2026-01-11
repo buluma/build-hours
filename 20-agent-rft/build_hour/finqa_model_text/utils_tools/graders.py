@@ -42,7 +42,7 @@ Please only return the numerical score, and nothing else."""
         }
    ],
    "pass_threshold": 0.75,
-   "model": "gpt-4.1-2025-04-14",
+   "model": "gpt-4.1",
    "range": [0, 1],
    "sampling_params": {
        "temperature": 0,

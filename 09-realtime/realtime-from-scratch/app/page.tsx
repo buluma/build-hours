@@ -44,7 +44,7 @@ export default function Home() {
     const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
     const ws = new WebSocket(
-      "wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-10-01",
+      "wss://api.openai.com/v1/realtime?model=gpt-4o",
       [
         "realtime",
         "openai-insecure-api-key." + apiKey,

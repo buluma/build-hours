@@ -13,7 +13,7 @@ output_dict = {
     "description": run_name,
     "prompts": ["../prompts/verbatim_input.txt", "../prompts/cot3.json"],
     "providers": [
-        "openai:chat:gpt-3.5-turbo",
+        "openai:chat:gpt-4o-mini",
         "openai:chat:gpt-4o-mini",
         "openai:chat:gpt-4o",
     ],

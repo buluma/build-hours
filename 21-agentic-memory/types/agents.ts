@@ -1,5 +1,5 @@
 export type AgentConfig = {
-  model: "gpt-5.1" | "gpt-5" | "gpt-5-mini" | "gpt-5-nano"
+  model: "gpt-5" | "gpt-5" | "gpt-5-mini" | "gpt-5-nano"
   reasoningLevel: "none" | "minimal" | "low" | "medium"
   verbosityLevel: "low" | "medium" | "high"
   memoryTrimming: boolean

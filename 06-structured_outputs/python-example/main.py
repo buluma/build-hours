@@ -27,7 +27,7 @@ class PaperInformation(BaseModel):
 SYSTEM_PROMPT = "You will be provided with a research paper. Your goal is to extract information from this paper in a structured format.";
 
 completion = client.beta.chat.completions.parse(
-model="gpt-4o-2024-08-06",
+model="gpt-4o",
 messages=[
     {"role": "system", "content": SYSTEM_PROMPT},
     {"role": "user", "content": INPUT}

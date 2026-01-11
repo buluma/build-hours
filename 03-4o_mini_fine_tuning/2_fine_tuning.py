@@ -10,7 +10,7 @@ random.seed(42)
 
 client = OpenAI()
 
-FT_MODEL = "gpt-4o-mini-2024-07-18"
+FT_MODEL = "gpt-4o-mini"
 run_name = "customer_service_chat_triage_n=100"
 df = pd.read_csv("./data/{}.csv".format(run_name))
 classes = df["correct_output"].unique().tolist()

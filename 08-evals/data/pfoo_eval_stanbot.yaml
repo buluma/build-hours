@@ -23,11 +23,11 @@ prompts:
   \ longer than expected\" or \"need more resourcing\".\n            - If there are\
   \ any blockers, especially ones without a clear path to quick resolution, then the\
   \ project should be At Risk.\n            - If the team is discussing pulling in\
-  \ more personnell to help, the project should be At Risk.\n    \n    ## Project\
-  \ Target Date\n    - Look for explicit information about when a project is scheduled\
-  \ to ship. Even if the date is at risk, it's important to extract any mentioned\
-  \ dates for when the project was planned to launch.\n    - If the target ship date\
-  \ was changed in the standup, return the original start date.\n    - Do not include\
+  \ more personnel to help, the project should be At Risk.\n    \n    ## Project Target\
+  \ Date\n    - Look for explicit information about when a project is scheduled to\
+  \ ship. Even if the date is at risk, it's important to extract any mentioned dates\
+  \ for when the project was planned to launch.\n    - If the target ship date was\
+  \ changed in the standup, return the original start date.\n    - Do not include\
   \ information about task ship dates.\n    - Example1:\n        - Input: \"Our initial\
   \ target was to complete by November 5th 2024... However, due to the recent changes,\
   \ let's tentatively adjust our target date to November 8th.\"\n        - Output:\

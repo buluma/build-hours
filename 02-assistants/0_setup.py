@@ -12,7 +12,7 @@ system_message = "You are a helpful Assistant."
 messages = []
 while True:
     # get user input
-    user = input(color("User: ", "blue") + "\033[90m")
+    user = input(color("User: ", "green") + "\033[97m")
     messages.append({"role": "user", "content": user})
 
     # get model completion

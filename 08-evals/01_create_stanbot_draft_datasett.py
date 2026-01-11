@@ -91,7 +91,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
             case,
             example_inputs,
             output_columns,
-            model="o1-preview",
+            model="gpt-4.1-mini",
         )
         for case in sample_cases
     ]

@@ -22,7 +22,7 @@ system_message = (
 
 messages = []
 while True:
-    user = input(color("User: ", "blue") + "\033[90m")
+    user = input(color("User: ", "white") + "\033[97m")
     messages.append({"role": "user", "content": user})
 
     response = client.chat.completions.create(

@@ -193,7 +193,7 @@ agent = triage_agent
 messages = []
 
 while True:
-    user = input(color("User: ", "blue") + "\033[90m")
+    user = input(color("User: ", "blue") + "\033[97m")
     messages.append({"role": "user", "content": user})
 
     response = run_full_turn(agent, messages)

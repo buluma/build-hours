@@ -42,7 +42,7 @@ Think step by step and output the final ratio on a new line at the end of the ou
 
 providers = [
     {
-        "id": "openai:gpt-3.5-turbo",
+        "id": "openai:gpt-4.1-nano",
     },
     {
         "id": "openai:gpt-4o-mini",
@@ -54,7 +54,7 @@ providers = [
         "id": "openai:o1-mini",
     },
     {
-        "id": "openai:o1-preview",
+        "id": "openai:gpt-4.1-mini",
     },
 ]
 

@@ -79,7 +79,7 @@ def run_full_turn(system_message, tools, messages):
 
 messages = []
 while True:
-    user = input(color("User: ", "blue") + "\033[90m")
+    user = input(color("User: ", "blue") + "\033[97m")
     messages.append({"role": "user", "content": user})
 
     run_full_turn(system_message, tools, messages)

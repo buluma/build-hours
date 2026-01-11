@@ -11,7 +11,7 @@ def color(text, color):
         "cyan": "\033[96m",
         "white": "\033[97m",
         "reset": "\033[0m",
-        "grey": "\033[90m",
+        "grey": "\033[97m",
     }
     return f"{color_codes.get(color, color_codes['reset'])}{text}{color_codes['reset']}"
 

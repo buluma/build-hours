@@ -104,7 +104,7 @@ def execute_tool_call(tool_call, tools_map):
 
 messages = []
 while True:
-    user = input(color("User: ", "blue") + "\033[90m")
+    user = input(color("User: ", "blue") + "\033[97m")
     messages.append({"role": "user", "content": user})
 
     new_messages = run_full_turn(system_message, tools, messages)

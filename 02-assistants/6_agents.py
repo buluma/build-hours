@@ -119,7 +119,7 @@ agent = Agent(
 
 messages = []
 while True:
-    user = input(color("User: ", "blue") + "\033[90m")
+    user = input(color("User: ", "blue") + "\033[97m")
     messages.append({"role": "user", "content": user})
 
     new_messages = run_full_turn(agent, messages)

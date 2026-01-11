@@ -1,7 +1,7 @@
 import type { AgentConfig } from "@/types/agents"
 
 export const defaultAgentConfig: AgentConfig = {
-  model: "gpt-5",
+  model: "gpt-5-mini",
   reasoningLevel: "low",
   verbosityLevel: "medium",
   memoryTrimming: false,

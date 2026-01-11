@@ -78,7 +78,7 @@ agent = Agent(
     You are running in non-interactive mode, so you must reach a conclusion and any disambiguation using the tools at your disposal.
     Your final output message should be a very brief summary of the conclusion of the task. Do not output a final message until you have completely concluded the task.
     """.strip(),
-    model="o3",
+    model="o3-mini",
     model_settings=ModelSettings(reasoning=Reasoning(summary="detailed")),
     tools=[
         get_weather,

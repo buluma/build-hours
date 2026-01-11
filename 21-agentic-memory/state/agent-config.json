@@ -1,6 +1,6 @@
 {
   "agentA": {
-    "model": "gpt-5",
+    "model": "gpt-5-mini",
     "reasoningLevel": "low",
     "verbosityLevel": "medium",
     "memoryTrimming": false,
@@ -19,7 +19,7 @@
     "toolPreambles": false
   },
   "agentB": {
-    "model": "gpt-5",
+    "model": "gpt-5-mini",
     "reasoningLevel": "low",
     "verbosityLevel": "medium",
     "memoryTrimming": false,

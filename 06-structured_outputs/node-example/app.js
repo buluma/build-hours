@@ -27,7 +27,7 @@ const SYSTEM_PROMPT =
   "You will be provided with a research paper. Your goal is to extract information from this paper in a structured format.";
 
 const completion = await openai.beta.chat.completions.parse({
-  model: "gpt-4o",
+  model: "gpt-4o-mini",
   messages: [
     { role: "system", content: SYSTEM_PROMPT },
     {

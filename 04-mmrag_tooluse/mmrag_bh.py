@@ -42,7 +42,7 @@ class Config:
     BASE64_OUTPUT_FOLDER = "./base64_images"
     COLLECTION_NAME = "image_embeddings"
     EMBEDDING_MODEL = "text-embedding-3-small"
-    GPT_MODEL = "gpt-4o"
+    GPT_MODEL = "gpt-4o-mini"
 
 
 # Initialize clients
@@ -598,7 +598,7 @@ def main_loop():
         ]
 
         response = client.chat.completions.create(
-            model='gpt-4o',
+            model='gpt-4o-mini',
             messages=messages,
             tools=TOOLS,
             tool_choice="required")

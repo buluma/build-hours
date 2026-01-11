@@ -303,7 +303,7 @@ def expand_query_with_llm(query: str,  past_history: List[Dict[str, Any]]) -> st
             """
 
         response = openai_client.beta.chat.completions.parse(
-            model="gpt-4o",  
+            model="gpt-4o-mini",  
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": query}
@@ -483,7 +483,7 @@ def generate_recommendation_explanation(recommended_product: Dict[str, Any], pas
     """
 
     response = openai_client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=[{"role":"system","content":prompt}],
         temperature=0.7
     )

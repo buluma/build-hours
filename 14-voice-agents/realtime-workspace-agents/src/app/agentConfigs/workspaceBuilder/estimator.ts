@@ -33,7 +33,7 @@ const calculate = tool({
     addBreadcrumb?.('[calculate]', { data_to_calculate });
 
     const body = {
-      model: "gpt-4.1",
+      model: "gpt-4.1-mini",
       tools: [
         {
           type: "code_interpreter",

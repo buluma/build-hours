@@ -19,9 +19,9 @@ prompts:
 providers:
 - id: openai:gpt-4o-mini
 - id: openai:gpt-4o-mini
-- id: openai:gpt-4o
+- id: openai:gpt-4o-mini
 - id: openai:o1-mini
-- id: openai:o1
+- id: openai:o1-mini
 tests:
 - assert:
   - metric: frac_key_points_in_summary

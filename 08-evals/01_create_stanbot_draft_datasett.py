@@ -58,7 +58,7 @@ client = OpenAI()
 
 # Request sample and parse json
 def request_new_sample(
-    task_context, case_i, example_inputs, output_columns, model="gpt-4o"
+    task_context, case_i, example_inputs, output_columns, model="gpt-4o-mini"
 ):
     p = (
         prompt_create_eval_dataset.replace("{{task_context}}", task_context)

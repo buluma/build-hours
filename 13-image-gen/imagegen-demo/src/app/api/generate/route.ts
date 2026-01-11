@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
       const parallelCalls = Array.from({ length: 4 }, async () => {
         try {
           const result = await client.images.edit({
-            model: "gpt-image-1",
+            model: "gpt-4o",
             prompt,
             image,
             //@ts-expect-error - this is a bug in the OpenAI SDK

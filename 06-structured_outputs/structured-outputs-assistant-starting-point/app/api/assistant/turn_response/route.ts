@@ -8,7 +8,7 @@ export async function POST(request: Request) {
 
   try {
     const response = await openai.beta.chat.completions.parse({
-      model: 'gpt-4o',
+      model: 'gpt-4o-mini',
       messages,
       temperature: 0
       //tools: tools as ChatCompletionTool[],

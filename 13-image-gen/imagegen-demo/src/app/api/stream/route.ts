@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
 
   const prompt = mappedPrompt;
   const openaiStream = await client.responses.create({
-    model: "gpt-4.1",
+    model: "gpt-4.1-mini",
     input: [
       {
         role: "user",

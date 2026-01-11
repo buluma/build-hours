@@ -23,7 +23,7 @@ def send_email(from_addr: str, to_addr: str, subject: str, body: str):
 
 agent = Agent(
     name="Assistant",
-    model="o3",
+    model="o3-mini",
     tools=[search_policies, get_emails, send_email],
 )
 

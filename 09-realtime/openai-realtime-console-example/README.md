@@ -126,7 +126,7 @@ const client = new RealtimeClient({ apiKey: process.env.OPENAI_API_KEY });
 client.updateSession({ instructions: 'You are a great, upbeat friend.' });
 client.updateSession({ voice: 'alloy' });
 client.updateSession({ turn_detection: 'server_vad' });
-client.updateSession({ input_audio_transcription: { model: 'whisper-1' } });
+client.updateSession({ input_audio_transcription: { model: 'gpt-4o-mini' } });
 
 // Set up event handling
 client.on('conversation.updated', ({ item, delta }) => {

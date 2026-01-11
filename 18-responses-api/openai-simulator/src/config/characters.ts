@@ -72,7 +72,7 @@ const MCP_TOOL = {
 
 const IMAGE_GENERATION_TOOL = {
     type: 'image_generation',
-    model: 'gpt-image-1',
+    model: 'gpt-4o-mini',
     quality: 'low',
     size: '1024x1024',
 };
@@ -87,7 +87,7 @@ export const samAgent = new OpenAIDialogueAgent({
     name: 'Sam A',
     initialMessage: "Hey there. I'm Sam A., CEO of OpenAI—can't wait to hear what you're building.",
     request_options: {
-        model: 'gpt-5',
+        model: 'gpt-5-mini',
         instructions: SAM_INSTRUCTIONS_BASIC + SAM_INSTRUCTIONS_WITH_TOOLS,
         reasoning: {
             effort: 'medium',
@@ -101,7 +101,7 @@ export const wendyAgent = new OpenAIDialogueAgent({
     name: 'Wendy J',
     initialMessage: "Hey there! I'm Wendy J.—what are we exploring today?",
     request_options: {
-        model: 'gpt-5',
+        model: 'gpt-5-mini',
         instructions: WENDY_INSTRUCTIONS,
         reasoning: {
             effort: 'medium',

@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
   const promptText = `Edit the image with the following prompt: ${prompt}. Maintain the original composition and subject.`;
   console.log("Editing image with prompt", prompt);
   const openaiStream = await client.responses.create({
-    model: "gpt-4.1",
+    model: "gpt-4.1-mini",
     input: [
       {
         role: "user",

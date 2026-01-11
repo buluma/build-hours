@@ -810,7 +810,7 @@ class LLMSummarizer:
     def __init__(
         self,
         client: AsyncOpenAI,
-        model: str = "gpt-4o",
+        model: str = "gpt-4o-mini",
         max_tokens: int = 400,
         tool_trim_limit: int = 600,
     ) -> None:
@@ -1774,7 +1774,7 @@ async def run_agent(  # noqa: C901 - orchestration requires several steps
 
     tools = _build_tools(config)
     instructions = _build_instructions(config)
-    model = str(config.get("model") or "gpt-5")
+    model = str(config.get("model") or "gpt-5-mini")
 
     reasoning_level = str(config.get("reasoningLevel") or "medium")
     verbosity_level = str(config.get("verbosityLevel") or "medium")

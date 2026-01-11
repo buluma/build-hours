@@ -15,7 +15,7 @@ def search_web(query: str):
 def start_task(description: str):
     response = client.responses.create(
         input=description,
-        model="o3",
+        model="o3-mini",
         background=True,
     )
     return response.id

@@ -522,9 +522,9 @@ function AgentConfigCard({
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="gpt-5">GPT-5.1</SelectItem>
+              <SelectItem value="gpt-5.1">GPT-5.1</SelectItem>
               <SelectItem value="gpt-5">GPT-5</SelectItem>
-              <SelectItem value="gpt-5-mini">GPT-5 Mini</SelectItem>
+              <SelectItem value="gpt-5">GPT-5 Mini</SelectItem>
               <SelectItem value="gpt-5-nano">GPT-5 Nano</SelectItem>
             </SelectContent>
           </Select>

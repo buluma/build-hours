@@ -33,7 +33,7 @@ const searchTheWeb = tool({
     addBreadcrumb?.('[web search]', { query });
 
     const body = {
-        model: "gpt-4.1",
+        model: "gpt-4.1-mini",
         tools: [ { type: "web_search_preview" } ],
         tool_choice: "required",
         input: `You're a web search assistant. Search the web and respond with relevant information based on the Search Query given the conversation history.

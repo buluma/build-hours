@@ -83,8 +83,8 @@ context = {
 # Store the initial state of context
 initial_context = copy.deepcopy(context)
 
-# Prompt for o1 model
-o1_prompt = """
+# Prompt for o1-mini model
+o1-mini_prompt = """
 You are a supply chain management assistant. The first input you will receive will be a complex task that needs to be carefully reasoned through to solve. 
 Your task is to review the challenge, and create a detailed plan to process customer orders, manage inventory, and handle logistics.
 
@@ -143,7 +143,7 @@ Use markdown format when generating the plan with each step and sub-step.
 Please find the scenario below.
 """
 
-# System prompt for gpt-4o
+# System prompt for gpt-4o-mini
 gpt4o_system_prompt = """
 You are a helpful assistant responsible for executing the policy on handling incoming orders. Your task is to follow the policy exactly as it is written and perform the necessary actions.
 
@@ -316,7 +316,7 @@ def process_scenario(scenario):
 
 def call_o1(scenario):
     prompt = f"""
-{o1_prompt}
+{o1-mini_prompt}
     
 Scenario:
 {scenario}
@@ -339,7 +339,7 @@ def call_gpt4o(plan):
 
     while True:
         response = client.chat.completions.create(
-            model='gpt-4o',
+            model='gpt-4o-mini',
             messages=messages,
             tools=TOOLS,
             parallel_tool_calls=False

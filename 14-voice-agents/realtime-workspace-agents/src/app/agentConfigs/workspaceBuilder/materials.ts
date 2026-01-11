@@ -34,7 +34,7 @@ const searchMaterials = tool({
     addBreadcrumb?.('[web search]', { query });
 
     const body = {
-        model: "gpt-4.1",
+        model: "gpt-4.1-mini",
         tools: [ { type: "web_search_preview" } ],
         input: `You're a materials and supplies assistant. 
         Search the web and respond with relevant information based on the Search Query given the conversation history.

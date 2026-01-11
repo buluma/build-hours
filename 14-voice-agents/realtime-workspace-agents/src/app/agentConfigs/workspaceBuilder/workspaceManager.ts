@@ -289,7 +289,7 @@ export const makeWorkspaceChanges = tool({
     const filteredLogs = history.filter((log) => log.type === 'message');
 
     const body: any = {
-      model: 'gpt-4.1',
+      model: 'gpt-4.1-mini',
       input: [
         {
           type: 'message',

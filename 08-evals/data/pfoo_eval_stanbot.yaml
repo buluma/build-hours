@@ -88,7 +88,7 @@ providers:
           type: object
         strict: true
       type: json_schema
-  id: openai:gpt-4o
+  id: openai:gpt-4o-mini
 tests:
 - assert:
   - metric: project_name

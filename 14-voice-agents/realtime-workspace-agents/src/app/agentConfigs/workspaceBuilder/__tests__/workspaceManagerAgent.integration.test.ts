@@ -39,7 +39,7 @@ if (!OPENAI_API_KEY) {
     it('makes correct add_workspace_tab function calls via realtime SDK', async () => {
       const session = new RealtimeSession(workspaceManagerAgent, {
         transport: 'websocket',
-        model: 'gpt-4o',
+        model: 'gpt-4o-mini',
       } as any);
 
       await session.connect({ apiKey: OPENAI_API_KEY } as any);
